@@ -1,11 +1,13 @@
 import NestedCheckboxes from "./components/NestedCheckboxes";
 import OtpInput from "./components/OtpInput";
+import Autocomplete from "./components/AutocompleteSearchbar";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <NestedCheckboxes />
       <OtpInput />
+      <Autocomplete />
     </div>
   );
 }
