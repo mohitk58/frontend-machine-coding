@@ -1,13 +1,11 @@
-import NestedCheckboxes from "./components/NestedCheckboxes";
-import OtpInput from "./components/OtpInput";
-import Autocomplete from "./components/AutocompleteSearchbar";
+import Header from "./components/Header";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      <NestedCheckboxes />
-      <OtpInput />
-      <Autocomplete />
+      <Header />
+      <Outlet /> {/* ✅ This is where child routes render */}
     </div>
   );
 }

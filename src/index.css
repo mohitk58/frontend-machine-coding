@@ -1,5 +1,5 @@
 .app {
-  text-align: center;
+  text-align: left;
 }
 
 .parent {
@@ -37,4 +37,57 @@
 .result:hover {
   background-color: beige;
   cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.loan-calculator-container {
+  width: 95%;
+  margin: 10px;
+}
+
+.loan-calculator-container input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 80%;
+}
+
+.lables {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tenure-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tenure {
+  width: 15%;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgb(226, 226, 226);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #009ad6;
+  color: #fff;
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+.color-red {
+  color: red;
 }
