@@ -1,22 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      <nav>
-        <button>
-          <Link to={"/"}>Autocomplete</Link>
-        </button>
-        <button>
-          <Link to={"/loan-calculator"}>Loan Calculator</Link>
-        </button>
-        <button>
-          <Link to={"/nested-checkbox"}>Nested Checkboxes</Link>
-        </button>
-        <button>
-          <Link to={"/otp-input"}>OTP Input</Link>
-        </button>
+      <nav className="nav">
+        <NavLink to="/" className="nav-link">
+          Autocomplete
+        </NavLink>
+        <NavLink to="/loan-calculator" className="nav-link">
+          Loan Calculator
+        </NavLink>
+        <NavLink to="/nested-checkbox" className="nav-link">
+          Nested Checkboxes
+        </NavLink>
+        <NavLink to="/otp-input" className="nav-link">
+          OTP Input
+        </NavLink>
       </nav>
     </div>
   );
